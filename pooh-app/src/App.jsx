@@ -229,8 +229,8 @@
 // export default App;
 
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './pages/Navbar';
+import Footer from './pages/Footer';
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import About from './pages/About';

@@ -236,6 +236,7 @@ import Movies from './pages/Movies';
 import About from './pages/About';
 import MovieDetail from './pages/MovieDetail';
 import NotFound from './pages/NotFound';
+import SearchBox from './pages/searchBox';
 
 function App() {
   return (

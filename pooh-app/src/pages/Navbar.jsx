@@ -1,3 +1,11 @@
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
+const linkClass = ({ isActive }) =>
+  isActive
+    ? 'text-cyan-400 font-semibold underline underline-offset-4'
+    : 'text-slate-300 hover:text-cyan-400 transition';
+
 function Navbar() {
   return (
     <nav className="flex items-center justify-between bg-slate-900 px-6 py-4">
@@ -6,7 +14,7 @@ function Navbar() {
       </span>
       <div className="hidden gap-6 text-slate-300 md:flex">
         <a href="/" className="hover:text-cyan-400 transition">หน้าแรก</a>
-        <a href="/movies" className="hover:text-cyan-400 transition">หนังใหม่</a>
+        <a href="/movies" className="hover:text-cyan-400 transition">หนังทั้งหมด</a>
         <a href="/about" className="hover:text-cyan-400 transition">รายการโปรด</a>
       </div>
       <button className="rounded-lg bg-cyan-600 px-4 py-2 text-sm font-semibold

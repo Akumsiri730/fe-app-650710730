@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { movies } from "../data";
 import MovieCard from "./MovieCard";
 import MovieGallery from "./MovieGallery";
+import SearchBox from './searchBox';
 
 function Home() {
   return (
